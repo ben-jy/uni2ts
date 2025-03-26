@@ -57,16 +57,16 @@ class FixedPatchSizeConstraints(PatchSizeConstraints):
 class DefaultPatchSizeConstraints(PatchSizeConstraints):
     # https://pandas.pydata.org/pandas-docs/stable/user_guide/timeseries.html#offset-aliases
     DEFAULT_RANGES = {
-        "S": (64, 128),  # 512s = 8.53min, 4096s = 68.26min
-        "T": (32, 128),  # 64min = 1.07h, 512min = 8.53h
-        "H": (32, 64),  # 128h = 5.33days
-        "D": (16, 32),
-        "B": (16, 32),
-        "W": (16, 32),
-        "M": (8, 32),
-        "Q": (1, 8),
-        "Y": (1, 8),
-        "A": (1, 8),
+        "s": (64, 128),  # 512s = 8.53min, 4096s = 68.26min
+        "t": (32, 128),  # 64min = 1.07h, 512min = 8.53h
+        "h": (32, 64),  # 128h = 5.33days
+        "d": (16, 32),
+        "b": (16, 32),
+        "w": (16, 32),
+        "m": (8, 32),
+        "q": (1, 8),
+        "y": (1, 8),
+        "a": (1, 8),
     }
 
     def _get_boundaries(self, n: int, offset_name: str) -> tuple[int, int]:
