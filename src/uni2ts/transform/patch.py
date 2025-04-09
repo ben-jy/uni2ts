@@ -59,6 +59,7 @@ class DefaultPatchSizeConstraints(PatchSizeConstraints):
     DEFAULT_RANGES = {
         "s": (64, 128),  # 512s = 8.53min, 4096s = 68.26min
         "t": (32, 128),  # 64min = 1.07h, 512min = 8.53h
+        "min": (32, 128),  # 64min = 1.07h, 512min = 8.53h
         "h": (32, 64),  # 128h = 5.33days
         "d": (16, 32),
         "b": (16, 32),
