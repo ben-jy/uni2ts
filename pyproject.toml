@@ -10,7 +10,7 @@ dynamic = [
 dependencies = [
   "torch>=2.1,<2.5",
   "lightning>=2.0",
-  "gluonts~=0.14.3",
+  "gluonts>=0.14.3, <=0.16.1",
   "numpy~=1.26.0",
   "scipy~=1.11.3",
   "einops==0.7.*",
