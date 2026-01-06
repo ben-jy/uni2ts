@@ -8,7 +8,7 @@ dynamic = [
   "version",
 ]
 dependencies = [
-  "torch>=2.1,<2.5",
+  "torch>=2.1,<2.8",
   "lightning>=2.0",
   "gluonts>=0.14.3, <=0.16.1",
   "numpy~=1.26.0",
